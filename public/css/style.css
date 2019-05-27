@@ -270,6 +270,8 @@ img{
   }
 }
 
+
+
 /*** 
 
 ====================================================================
@@ -1895,7 +1897,7 @@ img{
 	background-position: center;
 	background-size: cover;
 	padding: 320px 0 0px;
-	height: 100vh;
+	height: 80vh;
 
 }
 
@@ -2343,7 +2345,7 @@ img{
 
 .about-section{
 	position: relative;
-	padding: 210px 0 0;
+	padding: 60px 0 80px 20px;
 }
 
 .about-section .float-text{

@@ -79,20 +79,43 @@
     </section>
     <!--End Hidden Bar -->
 
+
     <!-- Bnner Section -->
     <section id="top-bg" class="banner-section-three" > <!-- style="background-image:url(images/main-slider/5.jpg);" -->
-        <div class="auto-container clearfix">
+        <div class="row">
+            <div class="col-lg-7">
+                
+            </div>
+            <div class="col-lg-5">
+                
+            </div>
+        </div>
+       <!--  <div class="auto-container clearfix">
 
 
-           <!--  <div class="content-box">
+            <div class="content-box">
                 <h2>Product <br>Marketing Summit</h2>
                 <div class="text">Product Marketing Summit 2020 will take place on 5-6 January in New York.</div>
                 <div class="btn-box"><a href="contact.html" class="theme-btn btn-style-one">Buy Ticket</a></div>
-            </div> -->
+            </div>
 
-            <div class="form-box wow slideInRight">
+            
+        </div> -->
+    </section>
+
+    <!-- End Bnner Section -->
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="row"> 
+            <div class="col-lg-4">
+                 <div class="sec-title">
+                        <h2>Express Interest</h2>
+                    </div>
+                <div class="form-box wow slideInLeft">
              
                 <div class="register-form">
+                    
                     <form method="post" action="index.html"> 
                         <div class="form-group">
                             <input type="text" name="username" placeholder="Ful name" required="">
@@ -106,38 +129,59 @@
                             <input type="email" name="email" placeholder="Email" required="">
                         </div>
 
-                        <div class="form-group">
-                            <input type="text" name="price" placeholder="Personal $35" required="">
+                        <div class="form-group option-box">
+                            <span style="margin-right: 20px;">I am interested in</span> 
+                            <div class="form-check-inline">
+                                <div class="radio-box" style="margin-right: 30px;">
+                                    <input type="radio" name="gender" id="male">&nbsp; 
+                                    <label for="2bhk">2BHK</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" name="gender" id="female">&nbsp; 
+                                    <label for="3bhk">3BHK</label>
+                                </div> 
+                            </div>
+                           
                         </div>
                         
                         <div class="form-group">
-                            <button class="theme-btn btn-style-two" type="submit" name="submit-form">Register Now</button>
+                            <button class="theme-btn btn-style-two" type="submit" name="submit-form">submit</button>
                         </div>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End Bnner Section -->
-
-    <!-- About Section -->
-    <section class="about-section">
-        <div class="anim-icons">
-            <span class="icon icon-cross-1"></span>
-            <span class="icon icon-circle-9"></span>
-        </div>
-        <span class="float-text">About</span>
-        <div class="auto-container">
-            <div class="sec-title">
-                <h2>About</h2>
             </div>
+            <div class="col-lg-8">
+               
+                <span class="float-text">About</span>
+                <div class="auto-container">
+                    <div class="sec-title">
+                        <h2>About Project</h2>
+                    </div>
 
-            <div>
-                
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+                    <div>
+                        
+                        <p>As a reputed realtor, D. N. Homes has always placed a premium on innovation and prizes its ability to maximize limited resource to offer the best possible solutions to its customers.</p>
+                        <p>D.N. is now coming up Odisha's First Child Centric Housing Project right Next to Infovalley. The project boasts off the following set of features which make it one of it's kind : </p>
+                        <ul>
+                            <li>700+ Apartments</li>
+                            <li>Living Options : 2/3 BHK</li>
+                            <li>12 Towers</li>
+                            <li>Kids Play School</li>
+                            <li>World Class Amenities </li>
+                            <li>10 mins drive from Khandagiri</li>
+                            <li>5 mins drive from DN Regalia</li>
+                            <li>Next to Infovalley - The Growth Corridor of Bhubaneswar</li>
+                        </ul><br><br>
+                        <p>Express your interest, fill the form now.</p>
+                    </div>
+                    
+                </div>
             </div>
-            <br><br><br><br>
+           
         </div>
+
+       
     </section>
     <!--End About Section -->
 
@@ -178,7 +222,7 @@
 
  (function loopBg(){
         var bg = $("#top-bg").css({backgroundImage : "url("+images[++c%n]+")"})
-        bg.fadeOut(4500, function () {
+        bg.fadeOut(4200, function () {
             loopBg()
         })
         bg.fadeIn(4000); 
