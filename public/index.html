@@ -219,12 +219,12 @@
     c = 0; 
 
  (function loopBg(){
-        var bg = $("#top-bg").css({backgroundImage : "url("+images[++c%n]+")"})
-        bg.fadeOut(4200, function () {
-            loopBg()
-        })
-        bg.fadeIn(4000); 
-    }());
+    var bg = $("#top-bg").css({backgroundImage : "url("+images[++c%n]+")"})
+    bg.fadeOut(1000, function () {
+        loopBg()
+    })
+    bg.fadeIn(1000).delay(5500); 
+}());
 
 </script>
 <!--End Google Map APi-->
