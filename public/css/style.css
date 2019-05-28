@@ -225,53 +225,9 @@ img{
   position: absolute;
 }
 
-#hero-carousel{
-  img {
-    left: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    max-width: none;
-    width: auto;
-    height: auto;
-  }
-  & i {
-    position: absolute;
-    top: 50%;
-  }
-}
-
-.carousel-fade {
-  .carousel-inner {
-    .item {
-      opacity: 0;
-      transition-property: opacity;
-    }
-
-    .active {
-      opacity: 1;
-    }
-
-    .active.left,
-    .active.right {
-      left: 0;
-      opacity: 0;
-      z-index: 1;
-    }
-
-    .next.left,
-    .prev.right {
-      opacity: 1;
-    }
-  }
-
-  .carousel-control {
-    z-index: 2;
-  }
-}
 
 
-
+ 
 /*** 
 
 ====================================================================
@@ -1891,12 +1847,18 @@ img{
 
 ***/
 
+#top-bg {
+	height: 80vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
 .banner-section-three{
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	padding: 320px 0 0px;
 	height: 80vh;
 
 }
@@ -1943,14 +1905,54 @@ img{
 }
 
 .banner-section-three .form-box{
-	position: relative;
-	float: right;
-	max-width: 600px;
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+	max-width: 500px;
 	width: 100%;
-	background-color:#ffffff;
 	margin-top: -110px;
 	margin-bottom: -80px;
+}
+
+.form-box h1 {
+	position: relative;
+	top: -30px;
+	color: #000;
+	text-align: center;
+	font-size: 4.5em;
+	font-weight: 800;
+	margin-bottom: 0 !important;
+}
+
+.form-box h4 {
+	color: #000;
+	text-align: center;
+	font-weight: 800;
+	font-size: 2.2em;
+	margin-bottom: 0 !important;
+}
+
+.form-box p {
+	position: relative;
+	top: -50px;
+	margin: 0 46px;
+	font-size: 1.3em;
+	color: #000;
+	text-align: center;
+	margin-bottom: 0 !important;	background-color: #fff;
+}
+
+.form-box .line {
+
+	margin: 0 140px;
+    position: relative;
+    top: -13px;
+}
+
+
+.banner-section-three .form-box .register-form{
 	box-shadow: 0 46px 133px rgba(0,0,0,0.21);
+	background-color:#ffffff;
 }
 
 .banner-section-three .inner-box{
@@ -5620,11 +5622,11 @@ img{
 
 .sponsor-section{
 	position: relative;
-	padding: 140px 0;
+	padding: 40px 0;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-color: #12114a;
+	background-color: #f7f7f7;
 }
 
 .sponsor-section:before{
@@ -5632,7 +5634,6 @@ img{
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: url(../images/icons/pattern-1.png);
 	background-position: right top;
 	content: "";
 	opacity: .12;
@@ -5654,8 +5655,20 @@ img{
 .sponsor-section .client-logo{
 	position: relative;
     display: inline-block;
-    margin-bottom: 60px;
-    margin: 0 14px 60px;
+    margin-bottom: 10px;
+}
+
+.logo-container {
+	margin-bottom: 20px; 
+}
+.logo-container1 {
+	margin-bottom: 150px; 
+	text-align: center;
+	
+}
+.logo-container h6 {	
+	color: #12114a;
+	font-weight: 500;
 }
 
 .sponsor-section .client-logo .image{
@@ -5666,8 +5679,7 @@ img{
 .sponsor-section .client-logo img{
 	position: relative;
 	max-width: 100%;
-	height: auto;
-	opacity: .4;
+	height: 110px;
 	transition: all 300ms ease;
 }
 
