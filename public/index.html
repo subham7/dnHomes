@@ -31,57 +31,11 @@
 
     <!--Form Back Drop-->
     <div class="form-back-drop"></div>
-    
-    <!-- Hidden Bar -->
-    <section class="hidden-bar">
-        <div class="inner-box">
-            <div class="cross-icon"><span class="fa fa-times"></span></div>
-            <div class="title">
-                <h2>Get Appointment</h2>
-            </div>
-            
-            <!--Appointment Form-->
-            <div class="appointment-form">
-                <form method="post" action="contact.html">
-                    <div class="form-group">
-                        <input type="text" name="text" value="" placeholder="Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" value="" placeholder="Email Address" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="phone" value="" placeholder="Phone no." required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="theme-btn btn-style-one">Submit now</button>
-                    </div>
-                </form>
-            </div>
-            
-            <!--Contact Info Box-->
-            <div class="contact-info-box">
-                <ul class="info-list">
-                    <li>contact@fizcon.com</li>
-                    <li>+(123) 456 7890</li>
-                </ul>
-                <ul class="social-list clearfix">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Linkedin</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Google +</a></li>
-                    <li><a href="#">Instagram</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!--End Hidden Bar -->
+   
 
 
     <!-- Bnner Section -->
-    <section class="banner-section-three" > <!-- style="background-image:url(images/main-slider/5.jpg);" -->
+    <section class="banner-section-three"  id="registerForm"> <!-- style="background-image:url(images/main-slider/5.jpg);" -->
         <div id="top-bg"></div>
         <div class="form-box wow slideInRight">
             <div class="top-content">
@@ -122,7 +76,7 @@
                         </div>
                         
                         <div class="form-group">
-                            <button class="theme-btn btn-style-two" type="submit" name="submit-form">Contact Now</button>
+                            <button class="theme-btn btn-style-two" type="submit" name="submit-form">Connect Now</button>
                         </div>
                     </form>
                 </div>
@@ -340,7 +294,7 @@
 
      <!-- Location Section -->
     <section class="location-section">
-        <span class="float-text">Get Directio</span>
+        <span class="float-text">Excellent Location</span>
         <div class="anim-icons">
             <span class="icon icon-dots wow zoomIn"></span>
             <span class="icon icon-dots-2"></span>
@@ -414,6 +368,7 @@
                             </div>
                         </div>
                     </div> 
+                    <a class="theme-btn btn-style-two" href="#registerForm">Connect Now</a>
                 </div> 
         </div>
     </section>
@@ -447,11 +402,24 @@
         "images/background/c3.jpg",
     ]
 
+    var mobileImage = [
+        "images/background/m1.jpg",
+        "images/background/m2.jpg",
+        "images/background/m3.jpg",
+        "images/background/m4.jpg",
+        "images/background/m5.jpg",
+    ]
+
     n = images.length,
     c = 0; 
 
  (function loopBg(){
-    var bg = $("#top-bg").css({backgroundImage : "url("+images[++c%n]+")"})
+     if ($(window).width() > 1200) {
+        var bg = $("#top-bg").css({backgroundImage : "url("+images[++c%n]+")"})
+     } else {
+          var bg = $("#top-bg").css({ backgroundImage: "url(" + mobileImage[++c % n] + ")" })
+     }
+   
     bg.fadeOut(1000, function () {
         loopBg()
     })

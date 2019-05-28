@@ -263,7 +263,11 @@ img{
 	line-height:20px;
 	font-weight:500;
 	padding:15px 40px 15px;
-	background-color: #4b1ece;
+	background-color: #ffd500;
+	color: #000;
+	text-transform: uppercase;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .btn-style-two:hover{
@@ -1905,6 +1909,28 @@ img{
 	padding: 20px 40px;
 }
 
+@media only screen and (max-width: 1200px){
+	.top-content {
+		display: none;
+	}
+
+.banner-section-three .form-box{
+		bottom: -386px !important;
+	}
+
+	.about-section {
+		margin-top: 390px;
+	}
+
+	.location-block{
+		text-align: center;
+	}
+
+	.location-block .inner-box {
+		padding: 15px !important;
+	}
+}
+
 .banner-section-three .form-box{
 	position: absolute;
 	bottom: 20px;
@@ -1954,6 +1980,7 @@ img{
 .banner-section-three .form-box .register-form{
 	box-shadow: 0 46px 133px rgba(0,0,0,0.21);
 	background-color:#ffffff;
+	margin: 0 46px;
 }
 
 .banner-section-three .inner-box{
