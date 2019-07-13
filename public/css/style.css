@@ -9318,7 +9318,7 @@ a.ui-button:active,
 
 .logoDN {
 	position: absolute;	
-	right: 10px;
+	left: 10px;
 	top: 0;
 	height: 110px;
 	width: auto;
