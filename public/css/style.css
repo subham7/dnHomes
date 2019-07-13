@@ -6900,7 +6900,7 @@ a.ui-button:active,
 	line-height: 25px;
 	color: #707070;
 	font-weight: 400;
-	text-align: center;
+	text-align: justify;
 }
 
 .icon-balloon{
@@ -9304,4 +9304,12 @@ a.ui-button:active,
 	height: auto;
 }  
 
+.connectBtnOnScroll {
+	position: fixed;
+	bottom: 30px;
+	z-index: 100;
+	display: none;
+	width: 200px;
+	left: 90vw;
+}
 

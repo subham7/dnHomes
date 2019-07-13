@@ -32,7 +32,8 @@
     <!--Form Back Drop-->
     <div class="form-back-drop"></div>
    
-
+    <!-- Form btn on scroll -->
+    <a class="theme-btn btn-style-two connectBtnOnScroll" href="#registerForm">Connect Now</a>
 
     <!-- Bnner Section -->
     <section class="banner-section-three"  id="registerForm"> <!-- style="background-image:url(images/main-slider/5.jpg);" -->
@@ -368,7 +369,7 @@
                             </div>
                         </div>
                     </div> 
-                    <a class="theme-btn btn-style-two" href="#registerForm">Connect Now</a>
+                    <!-- <a class="theme-btn btn-style-two" href="#registerForm">Connect Now</a> -->
                 </div> 
         </div>
     </section>
@@ -413,18 +414,27 @@
     n = images.length,
     c = 0; 
 
- (function loopBg(){
-     if ($(window).width() > 1200) {
-        var bg = $("#top-bg").css({backgroundImage : "url("+images[++c%n]+")"})
-     } else {
-          var bg = $("#top-bg").css({ backgroundImage: "url(" + mobileImage[++c % n] + ")" })
-     }
-   
-    bg.fadeOut(1000, function () {
-        loopBg()
-    })
-    bg.fadeIn(1000).delay(5500); 
-}());
+    (function loopBg(){
+        if ($(window).width() > 1200) {
+            var bg = $("#top-bg").css({backgroundImage : "url("+images[++c%n]+")"})
+        } else {
+            var bg = $("#top-bg").css({ backgroundImage: "url(" + mobileImage[++c % n] + ")" })
+        }
+    
+        bg.fadeOut(1000, function () {
+            loopBg()
+        })
+        bg.fadeIn(1000).delay(5500); 
+    }());
+
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        if (y > 200) {
+            $('.connectBtnOnScroll').fadeIn();
+        } else {
+            $('.connectBtnOnScroll').fadeOut();
+        }
+    });
 
 </script>
 <!--End Google Map APi-->
