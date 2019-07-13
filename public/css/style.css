@@ -9306,10 +9306,20 @@ a.ui-button:active,
 
 .connectBtnOnScroll {
 	position: fixed;
-	bottom: 30px;
+	bottom: 20px;
 	z-index: 100;
 	display: none;
-	width: 200px;
+	height: 80px;
+	width: 80px;
 	left: 90vw;
+	/* border-radius: 50%;
+	text-align: center; */
 }
 
+.logoDN {
+	position: absolute;	
+	left: 10px;
+	top: 0;
+	height: 110px;
+	width: auto;
+}
