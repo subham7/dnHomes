@@ -1933,7 +1933,7 @@ img{
 
 .banner-section-three .form-box{
 	position: absolute;
-	bottom: 20px;
+	bottom: 70px;
 	right: 10px;
 	max-width: 500px;
 	width: 100%;
@@ -9318,7 +9318,7 @@ a.ui-button:active,
 
 .logoDN {
 	position: absolute;	
-	left: 10px;
+	right: 10px;
 	top: 0;
 	height: 110px;
 	width: auto;
