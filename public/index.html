@@ -54,7 +54,7 @@
                     
                     <form method="post" action="https://formspree.io/subham.sengupta7@gmail.com"> 
                         <div class="form-group">
-                            <input type="text" name="username" placeholder="Ful name" required="">
+                            <input type="text" name="username" placeholder="Full name" required="">
                         </div>
                         
                         <div class="form-group">
@@ -112,9 +112,12 @@
                 <h2>Bhubaneswar's First Child-Centric Project</h2>
             </div>
 
-            <div style="text-align: center; font-size: large;">
-                Living in a child-centric home is perhaps the greatest gift that you can give your child. The safety and security that a child-centric home provides your child, enables them to learn and grow unhindered.</p>
-                <p>D.N.Homes brings to you, a first of it's kind, Child-centric group housing project where your child grows with curated amenities that enhance their personality & hobbies. A project spread over 8 acres that also offers lush green traffic free areas, recreational facilities like swimming pool, club house, walking tracks, pre-school & shopping areas.</p>
+            <div style="text-align: justify; font-size: large;">
+                
+</p>
+                <p>D.N. Homes brings to you, a first of it's kind, child-centric group housing project where your child grows with curated amenities that enhance their personality & hobbies. A project spread over 8 acres that also offers lush green traffic free areas, recreational facilities like swimming pool, club house, walking tracks, pre-school & shopping areas.</p>
+
+<p>Living in a child-centric home is perhaps the greatest gift that you can give your child. The safety and security that a child-centric home provides your child, enables them to learn and grow unhindered.</p>
             </div>
         </div>   
     </section>
@@ -338,7 +341,7 @@
                                     <h4>
                                         <a href="#">Near 720 Acre Infovalley </a>
                                     </h4>
-                                    <div class="text">The project is next to Info Valley where major IT companies will set-up their offices in the coming future. This is the
+                                    <div class="text">The project is next to Infovalley where major IT companies will set-up their offices in the coming future. This is the
                                     next big thing in the city and being in the close proximity of such a property is a definite flaunt.</div>
                                 </div>
                             </div>
@@ -354,9 +357,7 @@
                                     <h4>
                                         <a href="#">3 mins from DN Regalia</a>
                                     </h4>
-                                    <div class="text">Experience a world class shopping experience! DN Regalia, spread over 2,50,000 sq. ft. And homes to some of the biggest
-                                    national and international brands. DN Regalia offers a massive, immersive shopping experience with the best in fashion,
-                                    food and entertainment.</div>
+                                    <div class="text">Enjoy a world class shopping experience! DN Regalia is home to some of the biggest international brands which offers an immersive shopping experience with the best in fashion, food and entertainment.</div>
                                 </div>
                             </div>
                         </div>
@@ -371,7 +372,7 @@
                                     <h4>
                                         <a href="#">6 mins from Khandagiri</a>
                                     </h4>
-                                    <div class="text">The project is well within city limits as Khandagiri is just 6 mins away. The upcoming flyover connecting Bhubaneswar to infovalley will further reduce travel time beyond 6 mins. </div>
+                                    <div class="text">The project is well within the city limits as Khandagiri is just 6 minutes away from the location. The upcoming flyover connecting Bhubaneswar to Infovalley will further reduce travel time beyond 6 minutes. </div>
                                 </div>
                             </div>
                         </div>
@@ -419,13 +420,14 @@
     ]
 
     n = images.length,
+    m = mobileImage.length,
     c = 0; 
 
     (function loopBg(){
         if ($(window).width() > 1200) {
             var bg = $("#top-bg").css({backgroundImage : "url("+images[++c%n]+")"})
         } else {
-            var bg = $("#top-bg").css({ backgroundImage: "url(" + mobileImage[++c % n] + ")" })
+            var bg = $("#top-bg").css({ backgroundImage: "url("+mobileImage[++c%m]+")"})
         }
     
         bg.fadeOut(1000, function () {

@@ -406,7 +406,13 @@
 }
 
 @media only screen and (max-width: 767px){
-
+	.connectBtnOnScroll {
+		left: 75vw;
+	}
+	.logoDN {
+		transform: translateX(-50%);
+		left: 50%;
+	}
 	.main-header.fixed-header .header-upper .logo-box,
 	.main-header .header-upper .logo-box{
 		padding: 15px 0;
